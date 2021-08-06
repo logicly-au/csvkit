@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+
+  csvkit:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: stratdat/csvkit
+    volumes:
+      - ".:/mnt"
